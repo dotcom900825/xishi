@@ -5,7 +5,7 @@ from django.contrib.messages import constants as messages
 
 SITE_ROOT = os.path.join(os.path.realpath(os.path.dirname(__file__)), '../../')
 
-ALLOWED_HOSTS = ['xishi.info']
+ALLOWED_HOSTS = ['xishi.info','113.11.199.90']
 
 # Changes the naming on the front-end of the website.
 SITE_NAME = 'Pinry'
