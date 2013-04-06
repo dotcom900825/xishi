@@ -2,31 +2,31 @@
     <script id="pin-form-template" type="text/x-handlebars-template">
         <div class="modal hide fade" id="pin-form">
             <div class="modal-header">
-                <h3>New Pin</h3>
+                <h3>新闲置</h3>
             </div>
             <div class="modal-body">
                 <div class="span3" id="pin-form-image-preview"></div>
                 <div class="span3">
                     <div class="control-group">
-                        <label class="control-label" for="pin-form-image-url">Image URL</label>
+                        <label class="control-label" for="pin-form-image-url">物品图片 URL</label>
                         <div class="controls">
                             <input type="text" name="pin-form-image-url" id="pin-form-image-url"/>
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="pin-form-image-upload">Image Upload</label>
+                        <label class="control-label" for="pin-form-image-upload">上传物品照片 </label>
                         <div class="controls">
                             <div id="pin-form-image-upload"></div>
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="pin-form-description">Description</label>
+                        <label class="control-label" for="pin-form-description">物品简介及联系方式</label>
                         <div class="controls">
-                            <textarea name="pin-form-description" id="pin-form-description"></textarea>
+                            <textarea placeholder="请简单描述物品信息，及您的联系方式，如手机或邮箱" name="pin-form-description" id="pin-form-description"></textarea>
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="pin-form-tags">Tags</label>
+                        <label class="control-label" for="pin-form-tags">标签</label>
                         <div class="controls">
                             <input type="text" name="pin-form-tags" id="pin-form-tags"/>
                         </div>
@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" id="pin-form-submit">Post</button>
-                <button class="btn" id="pin-form-close">Cancel</a>
+                <button type="submit" class="btn btn-primary" id="pin-form-submit">提交</button>
+                <button class="btn" id="pin-form-close">取消</a>
             </div>
         </div>
     </script>

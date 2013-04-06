@@ -86,7 +86,10 @@ $(window).load(function() {
                     createPinPreviewFromForm()
                 }, 700);
                 if (!uploadedImage)
-                    $('#pin-form-image-upload').parent().parent().fadeOut(300);
+                {
+                    
+                }
+                  //  $('#pin-form-image-upload').parent().parent().fadeOut(300);
             });
         }
         // Drag and Drop Upload

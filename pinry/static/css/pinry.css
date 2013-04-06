@@ -20,7 +20,7 @@ a {
 
 /* Start Navigation */
 .navbar-fixed-top .navbar-inner {
-    background: white;
+    background: black;
     background-image: none;
     -webkit-box-shadow: 0 1px 0 #bbb;
        -moz-box-shadow: 0 1px 0 #bbb;
@@ -34,7 +34,8 @@ a {
     color: #275173;
     font-family: 'Monoton', sans-serif;
     font-size: 30px;
-    margin: 5px 0 0 -7px;
+    padding-left: 110px;
+    padding-top: 0px
 }
 
 .navbar .nav > li > a {
