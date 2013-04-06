@@ -97,3 +97,10 @@ IMAGE_SIZES = {
     'standard': {'size': [600, 0]},
     'square': {'crop': True, 'size': [125, 125]},
 }
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dotcom900825@gmail.com'
+EMAIL_HOST_PASSWORD = '19900825'
+EMAIL_PORT = 587
