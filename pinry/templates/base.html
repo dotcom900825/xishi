@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="{% static "css/messages.css" %}"/>
         <link rel="stylesheet" href="{% static "css/lightbox.css" %}"/>
         <link rel="stylesheet" href="{% static "css/pinry.css" %}"/>
+        <link rel="stylesheet" href="{% static "css/forkit.css" %}">
         {%  endcompress %}
         {% compress css inline %}
         {% block extra_css %}{% endblock %}
@@ -87,6 +88,27 @@
         </div>
         <!-- End No Script -->
 
+        <!-- -->
+        <div class="forkit-curtain">
+            <div class="close-button"></div>
+            <h2>欢迎使用喜拾</h2>
+            <h3 style='color:#89bdfc'>易物、换米、得知音</h3>
+            <h3>喜拾是一个闲置物品交易平台</h3>
+            <p style='text-align: center; width:700px; margin-left:350px'>大家可以将自己的闲置物品，如二手书、电子产品、CD、闲置杂物放在喜拾上，并留下你的联系方式，如手机或邮箱。当感兴趣的同学看到后，会和你联系，当面验货，一手交钱一手交货，就这么简单。
+            </p>
+            
+            <ul style='color:#ccc; list-style:none'>
+                <li>上传物品时：</li>
+                <li>第一步：你可以选择直接上传手机或电脑里的物品照片，或者，粘贴物品图片的链接，喜拾会自动解析出来。</li>
+                <li>第二步：填写物品简介，请说明物品信息，新旧程度，大致价格，还有最重要的，你的联系方式。</li>
+                <li>第三步，填写一下物品的标签，方便别人查找，添加多个标签，请以空格间隔开</li>
+            </ul>   
+            
+            <p style='margin-left:100px; margin-top:30px '>喜拾当前主要面向北邮在校学生, 但在将来希望能推广到北师、北影和中财，如果你和我一样是单身男生的话，相信你会支持我的 ^_^</p>
+        
+        </div>
+
+
         <!-- Content -->
         {% block yield %}{% endblock %}
         <!-- End Content -->
@@ -99,12 +121,15 @@
         {% block extra_templates %}{% endblock %}
         <!-- End Templates -->
 
+        <a class="forkit" data-text="使用指南" data-text-detached="请向下拉 >" href="https://github.com/hakimel/forkit.js"><img style="position: absolute; top: 100px; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+
         <!-- JavaScript -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.1.1/jquery.fineuploader.min.js"></script>
         {% compress js %}
+        <script src="{% static "js/forkit.js"  %}"></script>
         <script src="{% static "js/helpers.js" %}"></script>
         <script src="{% static "js/messages.js" %}"></script>
         <script src="{% static "js/lightbox.js" %}"></script>
